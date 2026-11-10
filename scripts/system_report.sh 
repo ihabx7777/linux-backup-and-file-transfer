@@ -1,0 +1,49 @@
+PROJECT_DIR="$HOME/the-first_project"
+REPORT_DIR="$PROJECT_DIR/reports"
+
+mkdir -p "$REPORT_DIR"
+
+REPORT_FILE="$REPORT_DIR/system_report_$(date +%Y-%m-%d_%H-%M-%S).txt"
+
+ {
+    echo "======================================"
+    echo "       LINUX SYSTEM REPORT" 
+    echo "======================================"
+
+    echo 
+    echo "Date and Time:"
+    date
+
+    echo 
+    echo "Hostname:"
+    hostname 
+
+  
+    echo  
+    echo "Operating System:"
+    cat /etc/os-release | grep -E '^(PRETTY_NAME)='
+
+    echo 
+    echo " Uptiime:"
+    uptime 
+
+    echo 
+    echo "CPU Indormation:"
+    nproc 
+
+    echo 
+    echo "Memory Usage:"
+    free -h 
+    
+    echo  
+    echo "Disk Usage:"
+    df -h 
+
+    echo 
+    echo "Top processes:" 
+    ps aux --sort=-%mem | head -n 6
+
+ } > "$REPORT_FILE"
+
+ echo "System report created successfully!"
+ echo "Report location: $REPORT_FILE 

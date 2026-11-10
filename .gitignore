@@ -1,0 +1,5 @@
+backups/
+logs/
+reports/*.txt
+secret/txt
+data/secret.txt
