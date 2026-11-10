@@ -1,8 +1,8 @@
-# Linux Backup and Remote File Trandfer 
+# Linux Backup and Remote File Transfer 
 
 ## Project Overview 
 
-This  prokect is part of my Linux learning journey.
+This  project is part of my Linux learning journey.
 
 The goal is to practice Linux system administration, file synchronization, backup operations, and remote file transfer using SSH.
 
@@ -16,12 +16,12 @@ The goal is to practice Linux system administration, file synchronization, backu
 
 ## Project Features 
 
-### 1. System Nonitoring 
+### 1. System Monitoring 
 
-A Bash scrip that generates a system report containing:
+A Bash script that generates a system report containing:
 
 - Date and time 
-- Hostmane 
+- Hostnane 
 - operating system 
 - System uptime 
 - CPU infomation 
@@ -35,7 +35,7 @@ Using rsync over SSH to transfer files between twe=o Linux machines over a netwo
 
 ### 4. Backup and Restore 
 
-Practicing bacjup ceation and restoring files form a backup directory.
+Practicing backup ceation and restoring files form a backup directory.
 
 ## What I Learned 
 
